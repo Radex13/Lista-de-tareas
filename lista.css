@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0f172a;
+    height: 35%;
+    width: 35.625rem;
+    position: absolute;
+    margin: auto;
+    top: 3.125rem;
+    left: 0;
+    right: 0;
+    padding: 1.875rem 0;
+    border-radius: 0.5rem;
+}
+
+#logo{
+    color: #0284c7;
+    font-size: 5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-family: 'Averia Sans Libre', cursive;
+}
+
+#container {
+    width: 100%;
+    min-height: 250px;
+}
+
+#nuevatarea{
+    position: relative;
+    padding: 1.875rem 0.938rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.938rem 1.875rem rgba(0, 0, 0, 0.3);
+}
+
+#nuevatarea input{
+    border-radius: 0.313rem;
+    width: 70%;
+    height: 2.813rem;
+    font-size: 0.938rem;
+    border: 0.125rem solid #d1d3d4;
+    padding: 0.75rem;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+}
+
+#nuevatarea input:focus{
+    outline: none;
+    border-color: #0284c7;
+}
+
+/* boton agregar */
+
+#nuevatarea button{
+    position: relative;
+    float: right;
+    width: 50px;
+    height: 45px;
+    border-radius: 0.188rem;
+    font-weight: 500;
+    font-size: 1rem;
+    background: #0284c7;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+#icon {
+    width: 3rem;
+    height: 3rem;
+    
+}
+
+::placeholder {
+    font-family: 'Averia Sans Libre', cursive;
+}
+
+input {
+    font-family: 'Averia Sans Libre', cursive;
+    text-transform: capitalize;
+}
+
+#nuevatarea button:hover {
+    background-color: #0369a1;
+}
+span#nombretarea{
+    font-family: 'Averia Sans Libre', cursive;
+    overflow-wrap: break-word;
+    width: 452px;
+    height: 50%;
+    color: white;
+}
+p {
+    display: block;
+    height: 100%;
+}
+
+
+#atras {
+    color: #f1f5f9;
+    background-color: #0284c7;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 1rem;
+    left: 2rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Averia Sans Libre', cursive;
+}
+
+#atras:hover {
+    background-color: #0369a1;
+}
+#atras-link {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#tareas{
+    width: 100%;
+    height: 13rem;
+    position: static;
+    margin-top: 1rem;
+    background: #ffffff;
+    padding: 1.875rem 1.25rem;
+    border-radius: 0.313rem;
+    overflow-y: scroll;
+}
+
+#tarea{
+    overflow-wrap: break-word;
+    background: #dbdbdb;
+    height: 3.125rem;
+    padding: 0.313rem 0.625rem;
+    border-radius: 0px;
+    margin-top: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-bottom: 0.125rem solid #d1d3d4;
+    border-radius: 0.5rem;
+    
+}
+
+#tarea span{
+    font-size: 0.938rem;
+    font-weight: 400;
+    cursor: pointer; 
+    
+}
+
+/* boton eliminar */
+#tarea button{ 
+    border: none;
+    background: #0284c7;
+    height: 100%;
+    width: 2.813rem;                              
+    color: #fff;
+    border-radius: 0.313rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+#tarea button:hover {
+    background-color: #0369a1;
+}
+
+#botones {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+
+}
+
+#completos, #incompletos, #total{
+    border: none;
+    background: #0284c7;
+    height: 3rem;
+    width: 7rem;                              
+    color: #fff;
+    border-radius: 0.5rem;
+    font-family: 'Averia Sans Libre', cursive;
+    margin-right: 10px;
+}
+
+.completado{
+    text-decoration: line-through;
+    opacity: 0.7;
+    color: #84cc16;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+@media (max-width: 640px) {
+    #nuevatarea button{
+        width: 50px;
+    height: 45px;
+    }
+
+    body {
+   width: 80%;
+    }
+    #nuevatarea button {
+        width: 10%;
+        }
+}
+
+@media (max-width: 270px) {
+    #nuevatarea, #tareas {
+        width: 217px
+    }
+}
+@media (max-width: 768px) {
+ #logo {
+    font-size: 3rem;
+ }
+}
